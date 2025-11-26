@@ -1,11 +1,21 @@
 version: '3.9'
+
 services:
-  shortenurl:
-    build: .
-    container_name: shortenurl-app
+  backend:
+    build: ./backend
+    container_name: backend-app
     ports:
       - "8080:8080"
     volumes:
-      - shortenurl-data:/data
+      - backend-data:/data
+
+  frontend:
+    build: ./frontend
+    container_name: frontend-app
+    ports:
+      - "3000:80"
+    volumes:
+      - ./frontend:/app
+
 volumes:
-  shortenurl-data:
+  backend-data:

@@ -39,3 +39,23 @@ It should:
   - How to build and run locally.
   - Example usage (frontend and API).
   - Any notes or assumptions.
+
+## Evaluation Criteria
+
+`
+curl -X POST http://localhost:8080/shorten \
+-H "Content-Type: application/json" \
+-d '{"fullUrl":"https://example.com/very/long/url","customAlias":"my-alias"}'
+`
+
+`
+curl http://localhost:8080/my-alias
+`
+
+`
+curl http://localhost:8080/urls
+`
+
+`
+curl -X DELETE http://localhost:8080/my-alias
+`

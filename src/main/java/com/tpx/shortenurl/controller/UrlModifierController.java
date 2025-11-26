@@ -3,7 +3,6 @@ package com.tpx.shortenurl.controller;
 import com.tpx.shortenurl.dto.ShortenRequestDto;
 import com.tpx.shortenurl.dto.ShortenResponseDto;
 import com.tpx.shortenurl.dto.UrlDto;
-import com.tpx.shortenurl.service.UrlModifierService;
 import com.tpx.shortenurl.service.UrlService;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -18,18 +17,15 @@ import java.util.Map;
 @RequestMapping("/")
 @CrossOrigin(origins = "http://localhost:5173")
 public class UrlModifierController {
-
-   private final UrlModifierService urlModifierService;
    private final UrlService urlService;
 
-    public UrlModifierController(UrlModifierService urlModifierService, UrlService urlService) {
-        this.urlModifierService = urlModifierService;
+    public UrlModifierController(UrlService urlService) {
         this.urlService = urlService;
     }
 
     @PostMapping("shorten")
     public ResponseEntity<ShortenResponseDto> shortenUrl(@RequestBody ShortenRequestDto requestDto) {
-        String shortenUrl = urlModifierService.generateShortUrl(requestDto);
+        String shortenUrl = urlService.generateShortUrl(requestDto);
         ShortenResponseDto response = new ShortenResponseDto(shortenUrl);
         return new ResponseEntity<>(response, HttpStatus.CREATED);
     }

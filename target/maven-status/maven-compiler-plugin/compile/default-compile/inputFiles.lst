@@ -6,5 +6,4 @@
 /Users/khese.yongya/code-test-instructions/src/main/java/com/tpx/shortenurl/entity/UrlEntity.java
 /Users/khese.yongya/code-test-instructions/src/main/java/com/tpx/shortenurl/mapper/UrlMapper.java
 /Users/khese.yongya/code-test-instructions/src/main/java/com/tpx/shortenurl/repository/UrlRepository.java
-/Users/khese.yongya/code-test-instructions/src/main/java/com/tpx/shortenurl/service/UrlModifierService.java
 /Users/khese.yongya/code-test-instructions/src/main/java/com/tpx/shortenurl/service/UrlService.java

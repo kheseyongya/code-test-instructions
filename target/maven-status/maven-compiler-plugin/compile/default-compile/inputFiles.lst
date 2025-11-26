@@ -1,9 +1,0 @@
-/Users/khese.yongya/code-test-instructions/src/main/java/com/tpx/shortenurl/ShortenurlApplication.java
-/Users/khese.yongya/code-test-instructions/src/main/java/com/tpx/shortenurl/controller/UrlModifierController.java
-/Users/khese.yongya/code-test-instructions/src/main/java/com/tpx/shortenurl/dto/ShortenRequestDto.java
-/Users/khese.yongya/code-test-instructions/src/main/java/com/tpx/shortenurl/dto/ShortenResponseDto.java
-/Users/khese.yongya/code-test-instructions/src/main/java/com/tpx/shortenurl/dto/UrlDto.java
-/Users/khese.yongya/code-test-instructions/src/main/java/com/tpx/shortenurl/entity/UrlEntity.java
-/Users/khese.yongya/code-test-instructions/src/main/java/com/tpx/shortenurl/mapper/UrlMapper.java
-/Users/khese.yongya/code-test-instructions/src/main/java/com/tpx/shortenurl/repository/UrlRepository.java
-/Users/khese.yongya/code-test-instructions/src/main/java/com/tpx/shortenurl/service/UrlService.java

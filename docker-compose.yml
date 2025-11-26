@@ -1,0 +1,11 @@
+version: '3.9'
+services:
+  shortenurl:
+    build: .
+    container_name: shortenurl-app
+    ports:
+      - "8080:8080"
+    volumes:
+      - shortenurl-data:/data
+volumes:
+  shortenurl-data:

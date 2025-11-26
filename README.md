@@ -76,10 +76,12 @@ Frontend:
 
 Frontend navigation:
 It is a simple frontend UI created using React. Just implements the required functionality that are requested in the task.
-- To shorten a URL, enter the full URL and an optional custom alias, then click "Shorten URL".
+- To shorten a URL, enter the full URL and an optional custom alias, then click "Shorten".
+- To use a shortened URL, simply enter the alias and hit "Get URL" which navigates you to the full url.
+- To delete a shortened URL, simply enter the alias and hit the "Delete Url" button.
 - To view all shortened URLs, click on the "View All URLs" link.
-- To delete a shortened URL, click the "Delete" button next to the URL in the list.
-- To use a shortened URL, simply enter the alias in the browser's address bar.
+
+![Screenshot 2025-11-26 at 14.30.03.png](asset/Screenshot%202025-11-26%20at%2014.30.03.png)
 
 ## Evaluation Criteria
 Testing endpoints can be done using curl or Postman. Here are some example curl commands:
